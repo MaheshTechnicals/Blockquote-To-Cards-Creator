@@ -1,4 +1,5 @@
 let btn = document.querySelector("#btn")
+let container = document.querySelector(".container")
 
 
 btn.addEventListener("click", () => {
@@ -24,5 +25,30 @@ function extractBlockquoteText() {
   const blockquoteTextArray = blockquoteMatches.map(match => {
     return match.replace(/<\/?blockquote>/g, "");
   });
-  console.log(blockquoteTextArray);
+  let tenvalue = blockquoteTextArray.slice(0, 10)
+
+
+  Array.from(tenvalue).forEach((each) => {
+
+    let div = document.createElement("div")
+
+    div.className = "card"
+    let ptag = document.createElement("p")
+    ptag.innerHTML = `${each}`
+
+    div.append(ptag)
+
+    container.append(div)
+
+
+
+
+
+  })
+
+
+
+
+
+
 }
