@@ -24,10 +24,27 @@ const darkColors = [
 
 
 btn.addEventListener("click", () => {
-
   extractBlockquoteText()
 
+  let cards = document.querySelectorAll(".card")
+  cards.forEach((each) => {
 
+    each.addEventListener("click", (e) => {
+
+
+
+
+
+
+
+    })
+
+
+
+
+
+
+  })
 
 })
 
