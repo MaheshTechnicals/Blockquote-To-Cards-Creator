@@ -39,10 +39,11 @@ body {
 }
 
 .card p {
-  color: #666;
+  color: white;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
