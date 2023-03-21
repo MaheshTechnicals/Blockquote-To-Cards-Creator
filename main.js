@@ -1,7 +1,20 @@
-let card = document.querySelector("#card")
+let btn = document.querySelector("#btn")
 
 
-card.innerHTML = `"Maine toh sabko mauka diya tha, Apne saath chalne ka, Par koi mere sath nahi chalna chahta, Toh main khud hi akele kaafi hu"`
+btn.addEventListener("click", () => {
+
+  extractBlockquoteText()
+
+
+
+})
+
+
+
+
+
+
+
 
 
 function extractBlockquoteText() {
